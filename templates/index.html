@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/b2392ab33b.js"></script>
+
+        <!-- title -->
+        <title>Chat-Bot</title>
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+        <style>
+            .righteous{
+                font-family: 'Righteous', cursive;
+            }
+            .montserrat{
+                font-family: 'Montserrat', sans-serif;
+            }
+            .montserrat-alt{
+                font-family: 'Montserrat Alternates', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container text-center p-3" style="max-width: 450px">
+            <h1 class="righteous text-dark text-center py-3">Chat-Bot</h1>
+            <form class="container-fluid border border-dark rounded py-4" action="/chat" method="post">
+                <div class="form-group">
+                    <input type="text" class="monsterrat-alt text-dark border rounded" name="username" id="username" placeholder="Choose Username" autocomplete="off" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
